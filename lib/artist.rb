@@ -7,6 +7,7 @@ class Artist
   attr_reader :songs
 extend Memorable
 extend Findable
+include Paramable
   @@artists = []
 
  # def self.find_by_name(name)
