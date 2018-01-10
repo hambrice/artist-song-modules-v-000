@@ -1,10 +1,12 @@
 require 'pry'
 require_relative "./concerns/memorable.rb"
+require_relative "./concerns/findable.rb"
 
 class Artist
   attr_accessor :name
   attr_reader :songs
 extend Memorable
+extend Findable
   @@artists = []
 
  # def self.find_by_name(name)
